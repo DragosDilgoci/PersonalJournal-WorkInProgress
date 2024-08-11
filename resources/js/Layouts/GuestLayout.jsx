@@ -17,7 +17,7 @@ export default function Guest({ children }) {
                 </Link>
             </div>
 
-            <div className="relative text-customPurple z-10 w-full sm:max-w-md px-6 py-4 bg-white/5 border-2 border-customLightblue shadow-md overflow-hidden sm:rounded-lg">
+            <div className="relative text-customPurple z-10 w-full max-w-md rounded-lg sm:max-w-md px-6 py-4 bg-white/10 border-2 border-customLightblue shadow-md overflow-hidden sm:rounded-lg">
                 {children}
             </div>
 

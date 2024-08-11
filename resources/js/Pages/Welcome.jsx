@@ -59,8 +59,8 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                         />
                     </div>
                     <div className="relative md:fixed lg:fixed top-2/4 md:top-1/3 lg:top-33% w-11/12 md:w-3/5 lg:w-3/5 left-0 transform -translate-y-1/2 pl-[5vw] z-10">
-                        <div className="text-white tracking-tight text-1.25rem sm:text-1.25rem md:text-2rem lg:text-2.5rem md:mt-80 lg:mt-80 font-normal">
-                            🌞<b>Summer Sneaker Sale!</b>🌞<br/>
+                        <div className="text-white tracking-tight text-1.25rem sm:text-1.25rem md:text-2rem lg:text-2.25rem md:mt-80 lg:mt-80 font-normal">
+                            🌞Summer Sneaker Sale!🌞
                             Cool off with hot deals! Save up to 50% on the latest styles and top brands. Sign in now and step into summer in style!
                         </div>
                     </div>
