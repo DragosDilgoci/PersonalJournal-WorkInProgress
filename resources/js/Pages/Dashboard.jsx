@@ -5,7 +5,7 @@ export default function Dashboard({ auth }) {
     return (
         <AuthenticatedLayout
             user={auth.user}
-            header={<div className="animate-marquee font-bold w-11/12 text-1rem text-white leading-tight">🌞<b>Summer Sneaker Sale!</b>🌞 Cool off with hot deals! Save up to 50% on the latest styles and top brands. Shop now and step into summer in style!</div>}
+            header={<div className="flex justify-center items-center py-10 animate-bounce font-bold w-full lg:text-1.40vw md:text-1.5vw text-3vw text-white leading-tight">🌞Summer Sneaker Sale!🌞 Cool off with hot deals! Save up to 50% on the latest styles and top brands. Shop now and step into summer in style!</div>}
         >
             <Head title="SneakerLand - Summer Sale" />
 

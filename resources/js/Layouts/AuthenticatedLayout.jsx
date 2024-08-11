@@ -22,7 +22,7 @@ export default function Authenticated({ user, header, children }) {
                         <div className="flex">
                             <div className="shrink-0 flex items-center">
                                 <Link href="/dashboard">
-                                    <ApplicationLogo className="block h-9 w-auto fill-current text-gray-800 drop-shadow-glow" />
+                                    <ApplicationLogo/>
                                 </Link>
                             </div>
 
@@ -55,7 +55,7 @@ export default function Authenticated({ user, header, children }) {
                                         <span className="inline-flex rounded-md">
                                             <button
                                                 type="button"
-                                                className="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150"
+                                                className="inline-flex uppercase items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-customLightblue bg-customPurple hover:text-customPurple/70 hover:bg-customLightblue/70 focus:outline-none transition ease-in-out duration-500"
                                             >
                                                 {user.name}
 
@@ -88,7 +88,7 @@ export default function Authenticated({ user, header, children }) {
                         <div className="-me-2 flex items-center sm:hidden">
                             <button
                                 onClick={() => setShowingNavigationDropdown((previousState) => !previousState)}
-                                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+                                className="inline-flex items-center justify-center p-2 rounded-md text-customPurple hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
                             >
                                 <svg className="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                                     <path
@@ -138,8 +138,8 @@ export default function Authenticated({ user, header, children }) {
 
                     <div className="pt-4 pb-1 border-t border-gray-200">
                         <div className="px-4">
-                            <div className="font-medium text-base text-gray-800">{user.name}</div>
-                            <div className="font-medium text-sm text-gray-500">{user.email}</div>
+                            <div className="font-medium text-base text-customLightblue">{user.name}</div>
+                            <div className="font-medium text-sm text-customLightblue">{user.email}</div>
                         </div>
 
                         <div className="mt-3 space-y-1">
@@ -153,12 +153,12 @@ export default function Authenticated({ user, header, children }) {
             </nav>
 
             {header && (
-                <header className="bg-white shadow">
+                <header className="bg-white shadow w-full py-8 px-4 sm:px-6 lg:px-8 border">
                     <NavLink href={route('dashboard')} active={route().current('dashboard')} className="max-w-full mx-auto py-6 px-4 sm:px-6 lg:px-8">{header}</NavLink>
                 </header>
             )}
 
-            <main>{children}</main>
+            <main /*className='z-10 relative'*/>{children}</main>
             <footer className="absolute bottom-0 text-0.75rem sm:0.75rem md:text-0.75rem lg:text-1rem w-full py-4 flex justify-center text-white">
                     SneakerLand © 2024
                 </footer>

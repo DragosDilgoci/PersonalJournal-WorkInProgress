@@ -17,9 +17,13 @@ export default function Guest({ children }) {
                 </Link>
             </div>
 
-            <div className="relative text-customPurple z-10 w-full sm:max-w-md px-6 py-4 bg-transparent border-2 border-customLightblue drop-shadow-image shadow-md overflow-hidden sm:rounded-lg">
+            <div className="relative text-customPurple z-10 w-full sm:max-w-md px-6 py-4 bg-white/5 border-2 border-customLightblue shadow-md overflow-hidden sm:rounded-lg">
                 {children}
             </div>
+
+            <footer className="absolute bottom-0 text-0.75rem sm:0.75rem md:text-0.75rem lg:text-1rem w-full py-4 flex justify-center text-white">
+                    SneakerLand © 2024
+                </footer>
         </div>
     );
 }

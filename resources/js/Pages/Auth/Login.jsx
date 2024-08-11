@@ -67,8 +67,8 @@ export default function Login({ status, canResetPassword }) {
                             name="remember"
                             checked={data.remember}
                             onChange={(e) => setData('remember', e.target.checked)}
-                            className="form-checkbox h-5 w-5 text-customLightblue focus:ring-2 focus:ring-customLightblue hover:text-customPurple border-gray-300 rounded 
-                            appearance-none checked:bg-customLightblue checked:border-transparent"
+                            className="form-checkbox h-5 w-5 checked:focus:ring-customLightblue not-checked:focus:ring-customLightblue checked:focus:bg-customPurple hover:text-customLightblue border-gray-300 rounded 
+                            appearance-none checked:bg-customPurple checked:border-transparent"                           
                         />
                         <span className="ms-2 text-sm text-customLightblue">Remember me</span>
                     </label>
